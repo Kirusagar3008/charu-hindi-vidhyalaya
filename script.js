@@ -34,6 +34,29 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
+// Contact form validation
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    const name = document.querySelector('input[name="name"]').value.trim();
+    const email = document.querySelector('input[name="email"]').value.trim();
+    const message = document.querySelector('textarea[name="message"]').value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!name || !email || !message) {
+        e.preventDefault();
+        alert('Please fill in all required fields (Name, Email, Message).');
+        return false;
+    }
+
+    if (!emailRegex.test(email)) {
+        e.preventDefault();
+        alert('Please enter a valid email address.');
+        return false;
+    }
+
+    // If valid, allow submit (Formspree will handle)
+    return true;
+});
+
 // Mobile menu toggle (if needed in future)
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
