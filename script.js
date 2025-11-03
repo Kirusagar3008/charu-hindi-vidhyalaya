@@ -178,7 +178,7 @@ function toggleMenu() {
     navLinks.classList.toggle('active');
 }
 
-// FAQ accordion functionality
+// FAQ accordion functionality with keyboard support
 document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', () => {
         const faqItem = question.parentElement;
@@ -187,11 +187,21 @@ document.querySelectorAll('.faq-question').forEach(question => {
         // Close all FAQ items
         document.querySelectorAll('.faq-item').forEach(item => {
             item.classList.remove('active');
+            item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
         });
 
         // Open clicked item if it wasn't active
         if (!isActive) {
             faqItem.classList.add('active');
+            question.setAttribute('aria-expanded', 'true');
+        }
+    });
+
+    // Keyboard support
+    question.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            question.click();
         }
     });
 });
