@@ -172,11 +172,22 @@ document.getElementById('enrollment-form').addEventListener('submit', function(e
     this.reset();
 });
 
-// Mobile menu toggle (if needed in future)
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
+// Hamburger menu toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-}
+    hamburger.classList.toggle('active');
+});
+
+// Close menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+    });
+});
 
 // FAQ accordion functionality with keyboard support
 document.querySelectorAll('.faq-question').forEach(question => {
