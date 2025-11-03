@@ -923,5 +923,109 @@ footer {
     /* Reduce container padding on mobile for better fit */
     .container {
         padding: 0 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Adjust logo size on mobile */
+    .logo img {
+        height: 40px;
+    }
+
+    .logo h1 {
+        font-size: 1.4rem;
+    }
+
+    .tagline {
+        font-size: 0.8rem;
+    }
+
+    /* Hamburger menu styles */
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0.5rem;
+    }
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+    /* Hide nav links by default on mobile */
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        background-color: #007bff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1001;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        font-stretch: normal;
+        display: block;
+        padding: 0.5rem 1rem;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .nav-links a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Show hamburger on mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Adjust nav container for mobile to place hamburger on right */
+    nav .container {
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        flex: 1;
+        text-align: center;
+    }
+
+    .hamburger {
+        margin-left: auto;
+    }
+
+    /* Reduce side banner size on mobile */
+    .side-banner {
+        width: 280px;
+    }
+
+    /* Prevent horizontal overflow */
+    body {
+        overflow-x: hidden;
     }
 }
