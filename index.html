@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charu Hindi Vidhyalaya - Best Hindi Coaching in Dharapuram</title>
-    <meta name="description" content="Learn Hindi at Charu Hindi Vidhyalaya in Dharapuram – expert coaching for grammar, literature, exams, and conversation skills. Join our classes for top results!">
-    <meta name="keywords" content="Hindi coaching Dharapuram, Hindi classes, Hindi grammar, Hindi literature, exam preparation, Charu Hindi Vidhyalaya">
+    <meta name="description" content="Expert Hindi coaching in Dharapuram with online and offline classes. Prepare for Hindi exams with external examiners. Join Charu Hindi Vidhyalaya for top Hindi language skills.">
+    <meta name="keywords" content="Hindi coaching Dharapuram, online Hindi classes, offline Hindi classes, Hindi exam preparation, external examiner Hindi exams, Hindi grammar classes, Hindi literature, Charu Hindi Vidhyalaya">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Charu Hindi Vidhyalaya - Premier Hindi Coaching in Dharapuram">
     <meta property="og:description" content="Expert Hindi language classes for students in Dharapuram. Achieve top scores with our proven coaching.">
@@ -14,8 +14,25 @@
     <meta property="og:image" content="https://via.placeholder.com/1200x630/007bff/ffffff?text=Charu+Hindi+Vidhyalaya">
     <!-- Add Google Site Verification here after getting code from Search Console -->
     <meta name="google-site-verification" content="kwvtvAw_LSYMAqjf2T1hlmlbAwNHx4YKLs9vehBMLhw" />
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID'); // Replace with actual GA4 ID
+    </script>
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#007bff">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
 </head>
 <body>
     <header>
@@ -26,7 +43,9 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#why-choose-us">Why Choose Us</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#online-classes">Online Classes</a></li>
                     <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -35,16 +54,31 @@
 
     <section id="hero">
         <div class="container">
-            <h2>Welcome to Charu Hindi Vidhyalaya</h2>
-            <p>Your premier destination for Hindi language coaching and education.</p>
+            <h1>Welcome to Charu Hindi Vidhyalaya</h1>
+            <h2>Your Gateway to Mastering Hindi</h2>
+            <p>Discover the beauty of Hindi language with our expert coaching in Dharapuram. Whether you choose online or offline classes, we're here to help you excel in Hindi grammar, literature, and conversation. Prepare for exams with external examiners and achieve your goals.</p>
+            <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-book"></i>
+                    <span>Expert Hindi Coaching</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <span>Small Class Sizes</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-trophy"></i>
+                    <span>Proven Success</span>
+                </div>
+            </div>
+            <a href="#contact" class="cta-button">Start Your Journey</a>
         </div>
     </section>
 
     <section id="about">
         <div class="container">
-            <h2>अंग्रेजी में About Us</h2>
             <h2>About Us</h2>
-            <p>Charu Hindi Vidhyalaya is dedicated to providing high-quality Hindi language education. We offer comprehensive coaching classes to help students excel in Hindi language skills, literature, and examinations.</p>
+            <p>Charu Hindi Vidhyalaya is dedicated to providing high-quality Hindi language education in Dharapuram. We offer both online Hindi classes and offline Hindi classes to cater to students' needs. Our Hindi exam preparation includes coaching for exams conducted with external examiners, ensuring fair and unbiased assessments. Join our Hindi coaching Dharapuram to master Hindi grammar, literature, and conversation skills.</p>
         </div>
     </section>
 
@@ -85,14 +119,22 @@
                     <p>Explore the rich world of Hindi literature and poetry.</p>
                 </div>
                 <div class="service">
-                    <h3>Exam Preparation</h3>
-                    <p>Prepare for Hindi language exams with targeted coaching.</p>
+                    <h3>Exam Preparation with External Examiners</h3>
+                    <p>Prepare for Hindi language exams conducted with external examiners for fair assessment.</p>
                 </div>
                 <div class="service">
                     <h3>Conversation Skills</h3>
                     <p>Improve your spoken Hindi and communication abilities.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="online-classes">
+        <div class="container">
+            <h2>Online Hindi Classes</h2>
+            <p>Join our online Hindi classes from anywhere. Learn Hindi grammar, literature, and conversation skills through interactive sessions. Ideal for students outside Dharapuram. Enroll today for flexible Hindi coaching online.</p>
+            <a href="#contact" class="cta-button">Join Online Classes</a>
         </div>
     </section>
 
@@ -123,8 +165,8 @@
     <section id="testimonials">
         <div class="container">
             <h2>What Our Students Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial">
+            <div class="testimonials-slider">
+                <div class="testimonial active">
                     <p>"Charu Hindi Vidhyalaya helped me improve my Hindi skills tremendously. The teachers are excellent!"</p>
                     <cite>- Student E</cite>
                 </div>
@@ -132,27 +174,156 @@
                     <p>"I scored top marks in my Hindi exam thanks to the coaching here. Highly recommended!"</p>
                     <cite>- Student F</cite>
                 </div>
+                <div class="testimonial">
+                    <p>"The online Hindi classes are fantastic. I learned so much from home. Best Hindi coaching in Dharapuram!"</p>
+                    <cite>- Student G</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"External examiner for Hindi exams made the process fair. Great preparation at Charu Hindi Vidhyalaya."</p>
+                    <cite>- Student H</cite>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><</button>
+                <button class="next-btn">></button>
             </div>
         </div>
     </section>
 
+    <section id="faqs">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faqs-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What courses do you offer?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer Hindi Grammar Classes, Literature Studies, Exam Preparation with External Examiners, and Conversation Skills training. Both online and offline classes are available.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide online classes?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer flexible online Hindi classes that can be accessed from anywhere. Our online platform provides interactive sessions with experienced instructors.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are the class timings?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our classes are scheduled flexibly to accommodate students' needs. We offer weekday and weekend batches. Business hours are Monday to Saturday, 5:30 PM to 8:30 PM. Sunday is closed.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you conduct exams with external examiners?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our exam preparation includes assessments conducted by external examiners to ensure fair and unbiased evaluation of students' Hindi language skills.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the class size?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We maintain small class sizes to provide personalized attention to each student, ensuring better learning outcomes and individual support.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I enroll?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can enroll by contacting us through the contact form, phone, or email. We also have a quick enrollment modal on our website for immediate registration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location">
+        <div class="container">
+            <h2>Our Location</h2>
+            <div class="location-content">
+                <div class="map-container">
+                    <iframe src="https://maps.google.com/maps?q=Charu+Hindi+Vidhayala+Tution+Center+136/9,+Gandhi+Nagar,+Ellis+Nagar,+Dharapuram,+Tamil+Nadu+638657&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="location-info">
+                    <h3>Visit Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 136/9, Gandhi Nagar, Ellis Nagar, Dharapuram, Tamil Nadu 638657</p>
+                    <p><i class="fas fa-clock"></i> Mon - Sat: 5:30 PM - 8:30 PM</p>
+                    <p><i class="fas fa-phone"></i> +91 6383804684</p>
+                    <p><i class="fas fa-envelope"></i> charuhindividhyalaya@gmail.com</p>
+                    <div class="directions">
+                        <h4>Get Directions</h4>
+                        <p>Located in the heart of Dharapuram, easily accessible by public transport. Parking available for students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>Get in touch for enrollment or inquiries. Fill the form below or use our contact details.</p>
+            <p>Get in touch for inquiries. Fill the form below or use our contact details.</p>
             <div class="contact-content">
                 <div class="contact-info">
-                    <p><strong>Address:</strong> Charu Hindi Vidhyalaya, Dharapuram</p>
-                    <p><strong>Phone:</strong> 1234567898</p>
-                    <p><strong>Email:</strong> charu@gmail.com</p>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>136/9, Gandhi Nagar, Ellis Nagar, Dharapuram, Tamil Nadu 638657</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                    <p>+91 6383804684</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>charuhindividhyalaya@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Mon - Sat: 5:30 PM - 8:30 PM</p>
+                        </div>
+                    </div>
                 </div>
-                <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="tel" name="phone" placeholder="Your Phone">
-                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+                <div class="contact-form-container">
+                    <h3>Contact Form</h3>
+                    <form id="contact-form" class="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="tel" name="phone" placeholder="Your Phone">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <a href="https://www.google.com/maps/place/Charu+Hindi+Vidhayala+Tution+Center/@10.7241352,77.5139667,17z/data=!4m8!3m7!1s0x3ba9c148be521d8d:0x86ef79b8c872dfb2!8m2!3d10.7241352!4d77.5139667!9m1!1b1!16s%2Fg%2F11tj04rh20?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D" target="_blank" class="cta-button review-btn">
+                        <i class="fas fa-star"></i> Leave a Review
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -167,6 +338,164 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://maps.google.com/maps/dir/?api=1&destination=Charu+Hindi+Vidhayala+Tution+Center+136/9,+Gandhi+Nagar,+Ellis+Nagar,+Dharapuram,+Tamil+Nadu+638657" target="_blank" class="floating-btn" title="Get Directions">
+            <i class="fas fa-directions"></i>
+        </a>
+        <a href="tel:+916383804684" class="floating-btn" title="Call Us">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/916383804684" target="_blank" class="floating-btn" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <button class="floating-btn" id="enroll-btn" title="Enroll Now">
+            <i class="fas fa-graduation-cap"></i>
+        </button>
+    </div>
+
+    <!-- Enroll Modal -->
+    <div id="enroll-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Quick Enrollment Form</h2>
+            <form id="enroll-form" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone">
+                <select name="course" required>
+                    <option value="">Select Course</option>
+                    <option value="grammar">Hindi Grammar Classes</option>
+                    <option value="literature">Literature Studies</option>
+                    <option value="exam">Exam Preparation</option>
+                    <option value="conversation">Conversation Skills</option>
+                    <option value="online">Online Hindi Classes</option>
+                </select>
+                <button type="submit">Enroll Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Side Banner Popup -->
+    <div id="side-banner" class="side-banner">
+        <div class="side-banner-content">
+            <span class="side-close-btn">&times;</span>
+            <h3>Summer Special Offer!</h3>
+            <p>Get 20% off on Summer Hindi Classes! Enroll now and master Hindi with expert coaching.</p>
+            <button id="side-enroll-btn" class="side-enroll-btn">
+                <i class="fas fa-graduation-cap"></i> Enroll Now
+            </button>
+            <div id="side-form-container" class="side-form-container">
+                <form id="side-enroll-form" class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Your Phone">
+                    <select name="course" required>
+                        <option value="">Select Course</option>
+                        <option value="grammar">Hindi Grammar Classes</option>
+                        <option value="literature">Literature Studies</option>
+                        <option value="exam">Exam Preparation</option>
+                        <option value="conversation">Conversation Skills</option>
+                        <option value="online">Online Hindi Classes</option>
+                    </select>
+                    <button type="submit">Submit Enrollment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Charu Hindi Vidhyalaya",
+      "description": "Expert Hindi coaching in Dharapuram with online and offline classes. Prepare for Hindi exams with external examiners.",
+      "url": "https://kirusagar3008.github.io/charu-hindi-vidhyalaya/",
+      "telephone": "+916383804684",
+      "email": "charuhindividhyalaya@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "136/9, Gandhi Nagar, Ellis Nagar",
+        "addressLocality": "Dharapuram",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "638657",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "10.7389",
+        "longitude": "77.5209"
+      },
+      "openingHours": "Mo-Sa 17:30-20:30",
+      "priceRange": "$$",
+      "image": "https://via.placeholder.com/1200x630/007bff/ffffff?text=Charu+Hindi+Vidhyalaya",
+      "sameAs": [
+        "https://facebook.com/charuhindividhyalaya",
+        "https://instagram.com/charuhindividhyalaya",
+        "https://youtube.com/charuhindividhyalaya"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Charu Hindi Vidhyalaya",
+      "description": "Hindi language coaching institute offering grammar, literature, and exam preparation classes.",
+      "url": "https://kirusagar3008.github.io/charu-hindi-vidhyalaya/",
+      "telephone": "+916383804684",
+      "email": "charuhindividhyalaya@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "136/9, Gandhi Nagar, Ellis Nagar",
+        "addressLocality": "Dharapuram",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "638657",
+        "addressCountry": "IN"
+      },
+      "educationalCredentialAwarded": "Hindi Language Proficiency Certificate",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Hindi Courses",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Hindi Grammar Classes",
+              "description": "Master the fundamentals of Hindi grammar."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Literature Studies",
+              "description": "Explore Hindi literature and poetry."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Exam Preparation with External Examiners",
+              "description": "Prepare for Hindi exams with fair external assessments."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Conversation Skills",
+              "description": "Improve spoken Hindi and communication."
+            }
+          }
+        ]
+      }
+    }
+    </script>
 
     <script src="script.js"></script>
 </body>
